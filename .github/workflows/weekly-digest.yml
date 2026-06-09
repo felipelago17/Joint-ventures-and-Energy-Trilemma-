@@ -1,40 +1,31 @@
-name: Weekly Research Digest
+name: Weekly Email Digest
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC
-    - cron: "0 6 * * 1"
-  workflow_dispatch:
+    - cron: "0 8 * * 1"   # Every Monday at 08:00 UTC
+  workflow_dispatch:        # Manual trigger for testing
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build-digest:
+  send-digest:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (full history for 7-day log)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 lxml feedparser
-
-      - name: Run digest scraper
-        run: python .github/scripts/scrape_digest.py
-
-      - name: Commit digest update
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add news/digest.md
-          if git diff --cached --quiet; then
-            echo "No new content — skipping commit."
-          else
-            git commit -m "chore: weekly digest update $(date -u +%Y-%m-%d)"
-            git push
-          fi
+      - name: Send weekly email digest
+        env:
+          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_RECIPIENTS:  ${{ secrets.DIGEST_RECIPIENTS }}
+        run: python .github/scripts/send_digest_email.py

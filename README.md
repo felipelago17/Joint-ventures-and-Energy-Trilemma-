@@ -61,6 +61,24 @@ _Entries to be added. Framework and search queries in place._
 
 _Entries to be added._
 
+## Weekly Digest Setup
+
+A GitHub Actions workflow (`.github/workflows/weekly-digest.yml`) sends a structured HTML email every Monday at 08:00 UTC summarising commits, new files, regulatory updates, news digest activity, and upcoming deadlines.
+
+Three repository secrets are required:
+
+| Secret | Value |
+|--------|-------|
+| `GMAIL_USER` | Your Gmail address (e.g. `you@gmail.com`) — used as the SMTP sender |
+| `GMAIL_APP_PASSWORD` | 16-character app password generated at **Google Account → Security → 2-Step Verification → App passwords** — your main account password will not work |
+| `DIGEST_RECIPIENTS` | Comma-separated list of recipient addresses (e.g. `supervisor@lsbu.ac.uk,colleague@example.com`) |
+
+Add secrets at **GitHub → Repository → Settings → Secrets and variables → Actions → New repository secret**.
+
+To test the workflow without waiting for Monday, go to **Actions → Weekly Email Digest → Run workflow**.
+
+For subscription requests, see the [Subscribe](https://felipelago17.github.io/Joint-ventures-and-Energy-Trilemma-/subscribe/) page on the research site.
+
 ## Documentation Site
 
 GitHub Pages: <https://felipelago17.github.io/Joint-ventures-and-Energy-Trilemma->
