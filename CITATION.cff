@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: >-
+  Joint Ventures and the Energy Trilemma:
+  A Comparative Study of Norway and the UAE
+message: >-
+  If you use materials from this repository in your research,
+  please cite it using the metadata below.
+type: dataset
+authors:
+  - family-names: Lago
+    given-names: Felipe
+    email: fe_lago@yahoo.com.br
+    orcid: ""
+repository-code: >-
+  https://github.com/felipelago17/Joint-ventures-and-Energy-Trilemma-
+abstract: >-
+  PhD research repository examining joint-venture governance structures
+  in Norwegian and UAE upstream petroleum sectors through the lens of
+  the World Energy Council's energy trilemma (security, equity,
+  sustainability). Includes annotated literature, regulatory documents,
+  and a computational-sovereignty dimension.
+keywords:
+  - joint ventures
+  - energy trilemma
+  - Norway
+  - UAE
+  - upstream petroleum
+  - governance
+  - computational sovereignty
+  - energy law
+license: CC-BY-4.0
+version: "0.1.0"
+date-released: "2026-06-09"

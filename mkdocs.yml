@@ -1,0 +1,72 @@
+site_name: "Joint Ventures & Energy Trilemma"
+site_description: >-
+  PhD research on joint-venture governance in Norway and the UAE
+  through the lens of the World Energy Council energy trilemma.
+site_author: Felipe Lago
+site_url: https://felipelago17.github.io/Joint-ventures-and-Energy-Trilemma-/
+repo_url: https://github.com/felipelago17/Joint-ventures-and-Energy-Trilemma-
+repo_name: felipelago17/Joint-ventures-and-Energy-Trilemma-
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+
+plugins:
+  - search
+  - tags
+  - include-markdown
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - footnotes
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Literature:
+      - JV Governance: literature/jv-governance.md
+      - Energy Trilemma: literature/energy-trilemma.md
+      - Norway Upstream: literature/norway-upstream.md
+      - UAE Upstream: literature/uae-upstream.md
+      - Computational Sovereignty: literature/computational-sovereignty.md
+  - Regulations:
+      - Norway: regulations/norway.md
+      - UAE: regulations/uae.md
+      - International: regulations/international.md
+  - News Digest: news/digest.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/felipelago17/Joint-ventures-and-Energy-Trilemma-
