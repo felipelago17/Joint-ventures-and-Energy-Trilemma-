@@ -1,0 +1,40 @@
+name: Weekly Research Digest
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml feedparser
+
+      - name: Run digest scraper
+        run: python .github/scripts/scrape_digest.py
+
+      - name: Commit digest update
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news/digest.md
+          if git diff --cached --quiet; then
+            echo "No new content — skipping commit."
+          else
+            git commit -m "chore: weekly digest update $(date -u +%Y-%m-%d)"
+            git push
+          fi
