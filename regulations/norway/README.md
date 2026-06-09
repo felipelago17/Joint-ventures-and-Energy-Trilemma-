@@ -25,6 +25,8 @@ Norwegian petroleum legislation, PSA regulations, and NPD guidelines relevant to
 
 ## CCS/CCUS Sources — Northern Lights JV
 
+> **Cross-reference:** For the UAE comparative case — Al Reyadah JV (ADNOC 51% / Masdar 49%, later wholly acquired by ADNOC) — see **regulations/uae/README.md § CCS/CCUS Sources — Al Reyadah JV**.
+
 Primary sources on the Northern Lights CO₂ transport and storage JV (Equinor / Shell / TotalEnergies, 33.3% each), the operational vehicle for Norway's *Longship* full-scale CCS programme. Gassnova represents the Norwegian state as funding and oversight counterpart.
 
 | Source | Description |

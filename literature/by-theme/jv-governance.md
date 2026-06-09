@@ -109,6 +109,78 @@ The Northern Lights JV (Equinor 33.3%, Shell 33.3%, TotalEnergies 33.3%) is the 
 **URL:** <https://onepetro.org/SPEADIP/proceedings/24ADIP/24ADIP/D021S050R005/585754>
 **Notes:** The presentation of a Northern Lights CCS paper at SPE ADIP — the flagship petroleum conference of the UAE — is itself a governance-relevant data point: it signals active knowledge transfer between the Norwegian CCS JV model and the Abu Dhabi upstream petroleum community. The ADIP platform is the primary venue where ADNOC, IOC partners, and UAE policymakers engage with emerging upstream technologies and governance frameworks; Northern Lights' appearance here suggests the UAE sector is actively evaluating Norwegian CCS JV governance lessons in the context of ADNOC's own decarbonisation strategy and potential future CCUS JV formation. _[Access the full paper via SPE OnePetro for specific technical/governance content — subscription required.]_
 
+> **Cross-reference:** For the UAE's own CCUS JV case — Al Reyadah (ADNOC 51% / Masdar 49%, world's first steel-sector CCS project, commissioned 2016) — see the **UAE CCS JV — Al Reyadah** section below. The two projects form the core comparative CCUS governance pair for Norway vs UAE analysis.
+
+---
+
+## UAE CCS JV — Al Reyadah
+
+Al Reyadah is the world's first CCUS project capturing CO₂ from the iron and steel industry and the first commercial-scale CCUS project in the MENA region, commissioned in late 2016. Originally structured as a JV between ADNOC (51%) and Masdar (49%), it captures CO₂ from the Emirates Steel Industries (ESI) DRI plant at Mussafah, transports it via a 45 km pipeline, and injects it into ADNOC's onshore oil fields for enhanced oil recovery (EOR). ADNOC subsequently acquired Masdar's 49% stake, converting Al Reyadah into a wholly-owned ADNOC subsidiary integrated into ADNOC Onshore — a JV governance lifecycle event (formation → operation → NOC absorption) with no equivalent in the Norwegian CCS model.
+
+> **Cross-reference:** For the Norwegian comparative case — Northern Lights JV (Equinor / Shell / TotalEnergies, 33.3% each, commissioned 2025) — see the **Norway CCS JV — Northern Lights** section above.
+
+### Sheikh / SPE ADIP 2021 — Commercialisation of Al Reyadah (OnePetro)
+**Title:** Commercialization of Al Reyadah – World's 1st Carbon Capture CCUS Project from Iron & Steel Industry for Enhanced Oil Recovery CO2-EOR
+**Author:** Fathesha Sheikh (Al Reyadah / ADNOC)
+**Source:** SPE Abu Dhabi International Petroleum Exhibition and Conference (ADIP), November 2021 — Paper SPE-207676-MS
+**URL:** <https://onepetro.org/SPEADIP/proceedings/21ADIP/21ADIP/D021S058R001/474132>
+**Notes:** Presented at ADIP by an Al Reyadah/ADNOC author, this is the primary operator-authored technical account of the project's commercialisation pathway. ADNOC identified a DRI steel plant as the optimal first-mover CO₂ source based on concentration, availability, and proximity to EOR fields — a site-selection logic driven by EOR economics rather than climate policy, which distinguishes the Al Reyadah model from Northern Lights' open-access, climate-policy-led design. The paper frames a broader master plan: multiple industrial CO₂ sources connected via a pipeline network to supply ADNOC's EOR needs across Abu Dhabi, positioning CCUS instrumentally within ADNOC's hydrocarbon production strategy. The ADIP venue signals that this governance model is primarily communicated within the UAE petroleum sector rather than to an international CCS accountability audience. _[Subscription required for full text.]_
+
+### Sheikh / SPE ADIP 2021 — Commercialisation of Al Reyadah (SPE Search)
+**Title:** Commercialization of Al Reyadah – World's 1st Carbon Capture CCUS Project from Iron & Steel Industry for Enhanced Oil Recovery CO2-EOR
+**Source:** SPE Search platform (alternate access point for SPE-207676-MS)
+**URL:** <https://search.spe.org/i2kweb/SPE/doc/onepetro:2665B90E>
+**Notes:** Alternative discovery entry for the same SPE-207676-MS paper via the SPE unified search index. Useful as a persistent identifier (OnePetro document ID `2665B90E`) if the proceedings URL changes. The abstract emphasises that global CCUS deployment has not met expectations due to commercialisation challenges — an acknowledgement, from an ADNOC-affiliated author at ADIP, of the systemic gap between policy ambitions and operational delivery that IEEFA's 2024 assessment subsequently quantifies for Al Reyadah specifically.
+
+### CSLF — Al Reyadah Site Visit Information, Abu Dhabi 2017
+**Title:** Site Visit to the Al Reyadah CCUS Project — CSLF Technical Group Annual Meeting, Abu Dhabi 2017
+**Source:** Carbon Sequestration Leadership Forum (CSLF)
+**URL:** <https://hgeo.energy.gov/archives/cslf/sites/default/files/documents/AbuDhabi2017/AbuDhabi17-SiteVisitInformation.pdf>
+**Notes:** Prepared for the CSLF's 2017 Abu Dhabi Technical Group Annual Meeting, this document describes the Al Reyadah facility for visiting international CCS policymakers. The JV structure at the time — ADNOC 51%, Masdar 49% — is formally documented, along with facility scope: capture of up to 800,000 t CO₂/yr from ESI's flue gas using MDEA (methyldiethanolamine) solvent technology, compression, and 45 km pipeline transport to ADNOC onshore EOR fields. The CSLF site visit is governance-relevant: it represents the only formal multilateral peer-review of the Al Reyadah JV's operations, and contrasts sharply with Norway's sustained multilateral engagement (CSLF, IEAGHG, bilateral agreements) around Northern Lights. The fact that Abu Dhabi hosted the 2017 CSLF meeting reflects UAE's strategic interest in CSLF recognition as an endorsement of its CCUS credentials.
+
+### CSLF Case Study — Al Reyadah (docslib.org)
+**Title:** Case Study: Al Reyadah CCUS Project
+**Source:** Carbon Sequestration Leadership Forum (CSLF) — case study document
+**URL:** <https://docslib.org/doc/2741377/case-study-al-reyadah-ccus-project>
+**Notes:** The official CSLF case study formalising Al Reyadah's recognition as a CSLF-recognised project. Documents the project's three core objectives: (1) reduce UAE carbon footprint; (2) implement CO₂-EOR in ADNOC onshore fields; (3) free up natural gas previously used for reservoir pressure maintenance. The dual commercial logic — CO₂ as a climate instrument and as an EOR input displacing methane injection — is central to understanding why Al Reyadah's governance structure prioritises NOC operational integration over third-party access or independent environmental verification. Unlike Northern Lights (which files detailed annual monitoring and experience reports to Gassnova), no equivalent mandatory public reporting obligation is visible in Al Reyadah's governance framework.
+
+### CSLF Case Study — Al Reyadah (dokumen.tips mirror)
+**Title:** Case Study: Al Reyadah CCUS Project — CSLF (MDEA process details)
+**Source:** CSLF case study (mirror / alternate access via dokumen.tips)
+**URL:** <https://dokumen.tips/documents/case-study-al-reyadah-ccus-project-cslf-study-al-reyadah-ccus-project-mdea.html>
+**Notes:** Alternate access point for the CSLF case study with additional detail on the MDEA solvent capture process. The MDEA technology was selected for its proven performance in gas-processing applications, reflecting ADNOC's preference for adapting established hydrocarbon-sector technology rather than deploying novel CCS-specific solutions — a governance choice that reduced technological risk but also limited the project's transferability as a model for post-combustion capture at scale. Use in conjunction with the docslib version; together they provide the most detailed publicly available technical description of the facility outside of the SPE paper.
+
+### Abu Zahra / IEAGHG 2015 — Emirates Steel / Al Reyadah Pre-Commissioning Perspective
+**Title:** Perspective from Emirates Steel Project / UAE
+**Author:** Dr. Mohammad Abu Zahra (Khalifa University / Emirates Steel)
+**Source:** IEAGHG CCUS Experts Group Meeting, Abu Dhabi, November 2015
+**URL:** <https://publications.ieaghg.org/docs/General_Docs/9-11-15%20Presentations/P3_4_Abu%20Zahra.pdf>
+**Notes:** Presented one year before Al Reyadah's commissioning, this is the pre-operational governance perspective from the Emirates Steel / Khalifa University side. Abu Zahra articulates Abu Dhabi's four strategic value drivers for CCUS: (1) strategic gas demand management (displacing CO₂-EOR methane use); (2) enhanced oil recovery revenue; (3) environmental/reputational commitments; (4) knowledge development in CCS technology. This driver hierarchy reveals that environmental commitment ranked third or fourth among Abu Dhabi's CCUS motivations — in contrast to the Norwegian Longship programme, where climate policy and the CO₂ tax were primary drivers. Relevant to the thesis argument that the UAE's CCUS JV governance logic is fundamentally different from Norway's: it is oil-production-optimisation governance dressed in climate language, rather than climate policy creating JV governance structures.
+
+### CSLF — Al Reyadah Project Page (official registry)
+**Title:** Al Reyadah Carbon Capture, Use, and Storage (CCUS) Project
+**Source:** Carbon Sequestration Leadership Forum (CSLF) — official project registry
+**URL:** <https://hgeo.energy.gov/archives/cslf/Projects/AlReyadah.html>
+**Notes:** The CSLF's official project registration entry for Al Reyadah, providing the authoritative multilateral record of recognition status, project milestones, and participating entities. The CSLF recognition (granted at the 2017 Abu Dhabi Mid-Year Meeting) is the only independent intergovernmental endorsement the project has received — and it predates the performance shortfalls documented by IEEFA in 2024. The project page is useful for establishing the timeline of multilateral engagement: Al Reyadah received CSLF recognition relatively quickly after commissioning, whereas Northern Lights built a far more sustained multilateral governance engagement (CSLF, IEAGHG, bilateral agreements, EU innovation fund). This asymmetry in multilateral depth is itself a governance finding.
+
+### Masdar Newsroom — MENA's First CCUS Project On Stream (2016/2018)
+**Title:** MENA's First Carbon Capture Utilisation & Storage (CCUS) Project Now On Stream
+**Source:** Masdar (Abu Dhabi Future Energy Company) — newsroom announcement
+**URL:** <https://masdar.ae/en/news/newsroom/menas-first-carbon-capture-utilisation--amp-storage-ccus-project-now-on-stream-23>
+**Notes:** Masdar's official commissioning announcement, providing the JV partner's (49% stakeholder) perspective on the project's launch. Key governance detail: Al Reyadah was commissioned in November 2016, making it one of only 22 large-scale CCUS projects operating or under construction globally at the time. The announcement documents the full value chain — CO₂ capture at ESI Mussafah → compression → 45 km pipeline → ADNOC onshore EOR injection — and the AED 450 million capital cost. Significant for subsequent governance analysis: Masdar's 49% stake was later acquired by ADNOC, converting the JV into a wholly-owned ADNOC subsidiary (ADNOC Onshore). This JV-to-full-NOC-ownership trajectory — absorbing the clean-energy partner into the oil company — is a distinctive governance outcome with no parallel in the Northern Lights model, where equal tripartite IOC ownership has been maintained and reinforced through Phase 2.
+
+### ADNOC Sustainability Report 2024 — CCUS Disclosure
+**Title:** ADNOC Sustainability Report 2024
+**Source:** ADNOC (Abu Dhabi National Oil Company)
+**URL:** <https://reports.adnoc.ae/e/sustainability-report-2024/UXhngi7668>
+**Notes:** ADNOC's primary ESG disclosure document for 2024. Key CCUS-relevant disclosures: (1) Al Reyadah (now wholly-owned, integrated into ADNOC Onshore) underpins ADNOC's claim of having pioneered commercial CCUS in MENA; (2) ADNOC's CCUS expansion targets — from 800,000 t/yr (Al Reyadah) toward 5 Mtpa by 2030 (multi-source gas plant capture programme) and a final investment decision on the 1.5 Mtpa Habshan CCUS project; (3) 2024 efficiency initiatives delivered approximately 1.3 million tCO₂e of emissions reductions, cumulative 3 million tCO₂e since 2022. Governance-relevant gap: despite being the CCUS project operator, ADNOC provides no independent audited verification of Al Reyadah's actual capture volumes against nameplate capacity — the disclosure gap identified by Palacios & Vidotto Caricati (CGEP 2023) is directly observable here. Cross-reference with IEEFA (2024) for independent performance assessment.
+
+### IEEFA — Steel CCUS Update: Carbon Capture Technology Looks Ever Less Convincing (November 2024)
+**Title:** Steel CCUS Update: Carbon Capture Technology Looks Ever Less Convincing
+**Source:** Institute for Energy Economics and Financial Analysis (IEEFA), November 2024
+**URL:** <https://ieefa.org/sites/default/files/2024-11/BN_Steel%20CCUS%20update-%20Carbon%20capture%20technology%20looks%20ever%20less%20convincing_Nov24.pdf>
+**Notes:** The most critical publicly available independent assessment of Al Reyadah's operational performance, published eight years after commissioning. Key findings: (1) Al Reyadah remains the world's only operational commercial-scale CCUS facility for steelmaking, with zero replication over eight years despite its "first-mover" status — evidence that its governance and commercial model has not been replicable; (2) in 2023 it captured only 26.6% of Emirates Steel Arkan's total Scope 1 and Scope 2 emissions, far below the 800,000 t/yr nameplate capacity and the broader decarbonisation claims made at commissioning; (3) in 2020–2021 the facility captured less than 20% of the plant's emissions; (4) the CO₂ is used for EOR, enabling additional fossil fuel production — IEEFA characterises this as a net climate disbenefit. The report also notes that Emirates Steel Arkan is now developing a DRI-EAF green hydrogen pilot, effectively moving away from CCS. This is essential counter-evidence to ADNOC's sustainability report narrative and directly relevant to the JV governance-environment linkage argument: without mandatory independent reporting obligations (as exist in Norway's CCS regulatory framework), governance opacity allows persistent underperformance to go unchallenged.
+
 ---
 
 <!-- Add further entries below -->
