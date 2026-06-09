@@ -5,7 +5,7 @@ PhD research repository — comparative governance analysis of upstream joint ve
 ## Research Questions
 
 1. How do joint-venture governance structures in Norway and the UAE balance energy security, equity, and sustainability?
-2. What role does computational sovereignty play in shaping digital-oilfield partnerships?
+2. How do JV structures contribute to or constrain each pillar of the energy trilemma?
 3. How are regulatory frameworks evolving in response to the energy transition?
 
 ## Repository Layout
@@ -18,9 +18,9 @@ PhD research repository — comparative governance analysis of upstream joint ve
 │       ├── energy-trilemma.md
 │       ├── norway-upstream.md
 │       ├── uae-upstream.md
-│       └── computational-sovereignty.md
+│       └── jv-contribution.md
 ├── regulations/
-│   ├── norway/            # Petroleum Act, PSA regulations, model JOAs
+│   ├── norway/            # Petroleum Act, PSA regulations, model JOAs, CCS sources
 │   ├── uae/               # ADNOC concession terms, UAE Petroleum Law
 │   └── international/     # UNCLOS, Energy Charter Treaty, OPEC docs
 ├── news/
@@ -40,7 +40,8 @@ PhD research repository — comparative governance analysis of upstream joint ve
 |-------|------|---------------|
 | Ankura JV Index H1 2023 | Industry report | Green JV volumes (61% of deal flow); ADNOC/Masdar 3-way restructuring as UAE governance case |
 | Ankura 2023 Annual Review | Industry report | Full-year record JV volumes; host-country-triggered natural resource restructurings |
-| AIEN 2023 Model International JOA | Model contract | Governance benchmark: GHG, human rights, sanctions, decommissioning provisions; Norway/UAE gap analysis |
+| AIEN 2023 Model International JOA | Model contract | Governance benchmark: GHG, human rights, sanctions, decommissioning; Norway/UAE gap analysis |
+| Northern Lights JV (13 sources) | Reports / conference papers | CCS JV governance: state oversight, open-source T&S model, IOC accountability, Norway→UAE knowledge transfer |
 
 ### UAE Upstream (`literature/by-theme/uae-upstream.md`)
 
@@ -50,15 +51,13 @@ PhD research repository — comparative governance analysis of upstream joint ve
 
 ### Energy Trilemma (`literature/by-theme/energy-trilemma.md`)
 
-| Entry | Type | Key Relevance |
-|-------|------|---------------|
-| Lago (2025) — Extended Abstract | Primary research | Four-dimension trilemma framework; computational sovereignty; Norway/UAE comparative framing |
-
-### Norway Upstream (`literature/by-theme/norway-upstream.md`)
-
 _Entries to be added._
 
-### Computational Sovereignty (`literature/by-theme/computational-sovereignty.md`)
+### JV Contribution to the Trilemma (`literature/by-theme/jv-contribution.md`)
+
+_Entries to be added. Framework and search queries in place._
+
+### Norway Upstream (`literature/by-theme/norway-upstream.md`)
 
 _Entries to be added._
 
