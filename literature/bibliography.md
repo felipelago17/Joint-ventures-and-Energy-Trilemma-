@@ -44,6 +44,8 @@ Lax, D.A. & Sebenius, J.K. (1986) *The Manager as Negotiator*. Free Press.
 
 Leber, J. & Leber, D. (2019) Decision cycles in multi-partner petroleum joint ventures, *International Energy Law Review*, 37(4), 153–168.
 
+Martin, T., Gilbert, J. & Gusy, M. (2020) A global review of joint operating agreement disputes, *Journal of World Energy Law & Business*, 13(3), 205–259.
+
 Munoz, F. (2016) Upstream licensing partnerships, *Journal of World Energy Law and Business*, 9(3), 183–197.
 
 Nordman, E.K. (2019) Joint ventures as strategic substitutes for acquisitions, *Strategic Management Journal*, 40(7), 1232–1255.
@@ -132,6 +134,8 @@ Hammer, U., Rønne, A., Schultz-Figueroa, B.J. & Taverne, E. (2019) *Petroleum L
 
 Lund, M.W. (2018) Cost control and monitoring in Norwegian offshore joint ventures, *Journal of Energy and Natural Resources Law*, 36(3), 265–288.
 
+Nakhle, C. (2010) Petroleum fiscal regimes: Evolution and challenges, in Daniel, P., Keen, M. & McPherson, C. (eds), *The Taxation of Petroleum and Minerals: Principles, Problems and Practice*. Routledge / IMF.
+
 Noreng, Ø. (1980) *The Oil Industry and Government Strategy in the North Sea*. Croom Helm.
 
 Nyland, C. & Osmundsen, P. (2016) Governance and performance in Norwegian petroleum operations, *Energy Policy*, 96, 496–506.
@@ -140,6 +144,12 @@ Osmundsen, P. (2010) Taxation of petroleum companies, in Kaiser, M.J. & Pulsiphe
 
 Ryggvik, H. (2015) *A Short History of the Norwegian Oil Industry*. Scandinavian Academic Press.
 
+Stoknes, P.E., Aslaksen, I., Goluke, U., Randers, J. & Garnåsjordet, P.A. (2024) Plausible futures for the Norwegian offshore energy sector: Business as usual, harvest or rebuild?, *Energy Policy*, 184, 113887.
+
+Thurber, M.C., Hults, D.R. & Heller, P.R.P. (2011) Exporting the 'Norwegian Model': The effect of administrative design on oil sector performance, *Energy Policy*, 39(9), 5366–5378.
+
+Wettestad, J., Inderberg, T.H.J. & Gulbrandsen, L.H. (2024) Exploring paths and innovation in Norwegian carbon capture and storage policy, *Environmental Policy and Governance*, 34(1).
+
 ---
 
 ## 4. UAE Upstream & Gulf Energy
@@ -147,6 +157,8 @@ Ryggvik, H. (2015) *A Short History of the Norwegian Oil Industry*. Scandinavian
 Al-Attar, A.A. & Alsharhan, A.S. (2003) Petroleum concession system in Abu Dhabi, *Journal of Energy and Natural Resources Law*, 21(3), 270–292.
 
 Al-Attar, A.A. (2010) History and evolution of the Abu Dhabi concession system, *OPEC Energy Review*, 34(2), 135–168.
+
+Al-Sarihi, A. (2023) Political economy of renewable energy transition in rentier states: The case of Oman, *Environmental Policy and Governance*, 33(3).
 
 Hvidt, M. (2013) Economic diversification in GCC countries: Past record and future trends, *LSE Middle East Centre Paper*, 27.
 
@@ -162,17 +174,29 @@ Seznec, J.-F. & Kirk, M. (2011) *Industrialization in the Gulf*. Routledge.
 
 ## 5. Energy Trilemma & Energy Security
 
+Bradshaw, M.J. (2014) *Global Energy Dilemmas: Energy Security, Globalization, and Climate Change*. Polity Press.
+
 Dannreuther, R. (2015) Energy security and deglobalisation, *Energy Research and Social Science*, 4, 12–22.
 
 Dannreuther, R. (2017) *International Security*, 2nd edn. Polity Press.
 
 Fattouh, B. & Sen, A. (2015) *The Past and the Future of Oil Demand*. Oxford Institute for Energy Studies.
 
+Horúcková, M. & Baudassé, T. (2019) Is there a trilemma of energy policy? A theoretical and empirical approach, *Economic Research Guardian*, 9(1), 2–34.
+
+Khan, I., Zakari, A., Dagar, V. & Singh, S. (2022) World energy trilemma and transformative energy developments as determinants of economic growth amid environmental sustainability, *Energy Economics*, 108, 105884.
+
 Kumari, S. (2025) Geopolitics of energy partnerships in the transition era, *Energy Research and Social Science*, 98.
 
 Lofthouse, J. & Herzberg, A. (2023) Polycentric governance and energy transitions, *Review of Austrian Economics*, 36(1), 1–24.
 
 Smith, J. (2019) *Energy Security and the Geopolitics of Oil and Gas*. Georgetown University Press.
+
+Song, L., Fu, Y., Zhou, P. & Lai, K.K. (2017) Measuring national energy performance via Energy Trilemma Index: A stochastic multicriteria acceptability analysis, *Energy Economics*, 66, 313–319.
+
+Sovacool, B.K. & Brown, M.A. (2010) Competing dimensions of energy security: An international perspective, *Annual Review of Environment and Resources*, 35, 77–108.
+
+Sovacool, B.K. & Mukherjee, I. (2011) Conceptualizing and measuring energy security: A synthesized approach, *Energy*, 36(8), 5343–5355.
 
 Villasuso, F. (2024) Computational sovereignty and the augmented energy trilemma, forthcoming PhD working paper, London South Bank University.
 
@@ -233,6 +257,8 @@ EITI (2023) *The EITI Standard 2023*. Extractive Industries Transparency Initiat
 Equinor (2022) *Climate Roadmap 2022*. Equinor ASA.
 
 GRI (2021) *GRI 11: Oil and Gas Sector 2021*. Global Reporting Initiative.
+
+IEA (2020) *CCUS in Clean Energy Transitions*. International Energy Agency.
 
 IRENA (2022) *Renewable Power Generation Costs in 2021*. International Renewable Energy Agency.
 

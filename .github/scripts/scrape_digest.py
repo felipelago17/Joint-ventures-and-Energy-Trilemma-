@@ -1,8 +1,9 @@
 """
 Weekly research digest scraper.
 
-Pulls recent items from NPD, ADNOC newsroom, IEA, WEC Trilemma Index,
-SSRN Energy Law, and Journal of World Energy Law & Business, then
+Pulls recent items from Norwegian Offshore Directorate, ADNOC newsroom,
+EIA Today in Energy, WEC Trilemma site, SSRN Energy Law, Journal of World
+Energy Law & Business (OUP), and energy-pedia upstream news, then
 prepends a new dated section to news/digest.md.
 """
 
@@ -44,7 +45,7 @@ class Source:
 
 
 # ---------------------------------------------------------------------------
-# Scrapers
+# Helpers
 # ---------------------------------------------------------------------------
 
 
@@ -69,58 +70,75 @@ def fetch_feed(url: str, label: str) -> Source:
     return src
 
 
-def scrape_npd() -> Source:
-    """Norwegian Petroleum Directorate — news RSS."""
-    return fetch_feed(
-        "https://www.npd.no/en/news/rss/",
-        "NPD (Norwegian Petroleum Directorate)",
+def scrape_html_links(url: str, label: str, link_selector: str,
+                      base: str = "", skip_suffixes: tuple = ()) -> Source:
+    """Generic HTML news-page scraper for sites without public RSS."""
+    src = Source(name=label)
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+        seen: set[str] = set()
+        for a in soup.select(link_selector):
+            href = a.get("href", "")
+            if not href or href in seen:
+                continue
+            if any(href.endswith(s) for s in skip_suffixes):
+                continue
+            seen.add(href)
+            full_url = href if href.startswith("http") else base + href
+            title = a.get_text(" ", strip=True)
+            if title and len(title) > 10:
+                src.items.append(Item(title=title, url=full_url))
+            if len(src.items) >= MAX_ITEMS:
+                break
+    except Exception as exc:  # noqa: BLE001
+        src.items.append(Item(title=f"[Error fetching {label}: {exc}]", url=""))
+    return src
+
+
+# ---------------------------------------------------------------------------
+# Scrapers
+# ---------------------------------------------------------------------------
+
+
+def scrape_sodir() -> Source:
+    """Norwegian Offshore Directorate (renamed from NPD, 2024) — HTML scrape."""
+    return scrape_html_links(
+        url="https://www.sodir.no/en/whats-new/news/",
+        label="Norwegian Offshore Directorate (Sodir)",
+        link_selector="a[href*='/en/whats-new/news/']",
+        base="https://www.sodir.no",
+        skip_suffixes=("/rss/", "/subscribe-to-news/", "/news/"),
     )
 
 
 def scrape_adnoc() -> Source:
     """ADNOC Newsroom — HTML scrape (no public RSS)."""
-    src = Source(name="ADNOC Newsroom")
-    url = "https://www.adnoc.ae/en/news-and-media/press-releases"
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "lxml")
-        # ADNOC uses anchor tags with press-release links
-        articles = soup.select("a[href*='/news-and-media/press-releases/']")
-        seen: set[str] = set()
-        for a in articles:
-            href = a.get("href", "")
-            if not href or href in seen or href == url:
-                continue
-            seen.add(href)
-            full_url = href if href.startswith("http") else "https://www.adnoc.ae" + href
-            title = a.get_text(" ", strip=True)
-            if title:
-                src.items.append(Item(title=title, url=full_url))
-            if len(src.items) >= MAX_ITEMS:
-                break
-    except Exception as exc:  # noqa: BLE001
-        src.items.append(Item(title=f"[Error fetching ADNOC: {exc}]", url=""))
-    return src
+    return scrape_html_links(
+        url="https://www.adnoc.ae/en/news-and-media/press-releases",
+        label="ADNOC Newsroom",
+        link_selector="a[href*='/news-and-media/press-releases/']",
+        base="https://www.adnoc.ae",
+    )
 
 
-def scrape_iea() -> Source:
-    """IEA — news RSS."""
+def scrape_eia() -> Source:
+    """US Energy Information Administration — Today in Energy RSS."""
     return fetch_feed(
-        "https://www.iea.org/rssnews.xml",
-        "IEA (International Energy Agency)",
+        "https://www.eia.gov/rss/todayinenergy.xml",
+        "EIA — Today in Energy",
     )
 
 
 def scrape_wec() -> Source:
-    """WEC Trilemma Index — HTML scrape (no RSS; returns landing page note)."""
+    """WEC Trilemma Index — HTML scrape (JS-heavy; returns landing page note)."""
     src = Source(name="WEC World Energy Trilemma Index")
     url = "https://trilemma.worldenergy.org/"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "lxml")
-        # WEC is a JS-heavy site; extract any visible text links
         for a in soup.find_all("a", href=True)[:20]:
             text = a.get_text(strip=True)
             href = a["href"]
@@ -142,18 +160,67 @@ def scrape_wec() -> Source:
 
 
 def scrape_ssrn() -> Source:
-    """SSRN Energy Law — RSS feed."""
+    """SSRN Energy & Resources Law eJournal — RSS feed."""
+    # journal_id=1342872 is the Energy & Resources Law eJournal
     return fetch_feed(
-        "https://papers.ssrn.com/sol3/Jeljour_results.cfm?form_name=journalbrowse&journal_id=1342872&Network=no&SortOrder=ab_approval_date&abstracts=show&No=0&RSSFeed=yes",
-        "SSRN — Energy & Environment Law",
+        "https://papers.ssrn.com/sol3/Jeljour_results.cfm"
+        "?form_name=journalbrowse&journal_id=1342872&RSSFeed=yes",
+        "SSRN — Energy & Resources Law eJournal",
     )
 
 
 def scrape_jwelb() -> Source:
-    """Journal of World Energy Law & Business — OUP RSS."""
-    return fetch_feed(
+    """Journal of World Energy Law & Business (OUP) — advance-access feed."""
+    src = Source(name="Journal of World Energy Law & Business (OUP)")
+    # Try feedparser autodiscovery first, then known OUP site-ID patterns
+    candidates = [
+        "https://academic.oup.com/jwelb/advance-articles",
         "https://academic.oup.com/rss/site_5504/advanceAccess_5504.xml",
-        "Journal of World Energy Law & Business (OUP)",
+        "https://academic.oup.com/rss/site_5505/advanceAccess_5505.xml",
+    ]
+    for url in candidates:
+        try:
+            feed = feedparser.parse(url)
+            if feed.entries:
+                for entry in feed.entries[:MAX_ITEMS]:
+                    src.items.append(
+                        Item(
+                            title=entry.get("title", "(no title)").strip(),
+                            url=entry.get("link", ""),
+                            date=entry.get("published", "")[:10]
+                            if entry.get("published")
+                            else "",
+                            snippet=BeautifulSoup(
+                                entry.get("summary", ""), "lxml"
+                            ).get_text()[:200].strip(),
+                        )
+                    )
+                break
+        except Exception:  # noqa: BLE001
+            continue
+    if not src.items:
+        src.items.append(
+            Item(
+                title="JWELB advance articles — visit journal page",
+                url="https://academic.oup.com/jwelb/advance-articles",
+            )
+        )
+    return src
+
+
+def scrape_irena() -> Source:
+    """IRENA — International Renewable Energy Agency news RSS."""
+    return fetch_feed(
+        "https://www.irena.org/rssfeed",
+        "IRENA — International Renewable Energy Agency",
+    )
+
+
+def scrape_energy_pedia() -> Source:
+    """energy-pedia — upstream oil & gas news (RSS)."""
+    return fetch_feed(
+        "https://www.energy-pedia.com/rss.aspx",
+        "energy-pedia (upstream oil & gas)",
     )
 
 
@@ -190,19 +257,20 @@ def build_section(sources: list[Source]) -> str:
 
 def main() -> None:
     sources = [
-        scrape_npd(),
+        scrape_sodir(),
         scrape_adnoc(),
-        scrape_iea(),
+        scrape_eia(),
+        scrape_irena(),
         scrape_wec(),
         scrape_ssrn(),
         scrape_jwelb(),
+        scrape_energy_pedia(),
     ]
 
     new_section = build_section(sources)
 
     existing = DIGEST_PATH.read_text(encoding="utf-8")
 
-    # Insert new section after the header block (before the first "---" separator)
     marker = "<!-- AUTO-GENERATED CONTENT BELOW"
     if marker in existing:
         split_point = existing.find(marker)
