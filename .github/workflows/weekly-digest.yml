@@ -25,7 +25,7 @@ jobs:
 
       - name: Send weekly email digest
         env:
-          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_USER:         ${{ vars.GMAIL_USER || secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           DIGEST_RECIPIENTS:  ${{ secrets.DIGEST_RECIPIENTS }}
         run: python .github/scripts/send_digest_email.py
