@@ -1,8 +1,8 @@
-name: Weekly Email Digest
+name: Daily Email Digest
 
 on:
   schedule:
-    - cron: "0 8 * * 1"   # Every Monday at 08:00 UTC
+    - cron: "0 8 * * *"   # Every day at 08:00 UTC
   workflow_dispatch:        # Manual trigger for testing
 
 permissions:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (full history for 7-day log)
+      - name: Checkout repository (full history for 1-day log)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Send weekly email digest
+      - name: Send daily email digest
         env:
           GMAIL_USER:         felchagas@gmail.com
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

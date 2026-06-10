@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Weekly email digest — no external dependencies.
+Daily email digest — no external dependencies.
 Uses only stdlib: smtplib, email.mime, subprocess, os, datetime.
 
 Secrets (GitHub Actions env vars):
@@ -49,8 +49,8 @@ def git(*args):
     return r.stdout.strip()
 
 
-def commits_since_7_days():
-    raw = git("log", "--since=7 days ago", "--oneline", "--no-merges")
+def commits_since_1_day():
+    raw = git("log", "--since=1 day ago", "--oneline", "--no-merges")
     if not raw:
         return []
     out = []
@@ -61,9 +61,9 @@ def commits_since_7_days():
     return out
 
 
-def changed_files_since_7_days():
+def changed_files_since_1_day():
     raw = git(
-        "log", "--since=7 days ago",
+        "log", "--since=1 day ago",
         "--name-status", "--pretty=format:", "--no-merges",
         "--diff-filter=ACDMRT",
     )
@@ -190,19 +190,19 @@ def build_html(commits, new_files, modified_files, today_str):
         )
         commit_html = f"<ul>{commit_items}</ul>"
     else:
-        commit_html = '<p class="empty">No commits in the past 7 days.</p>'
+        commit_html = '<p class="empty">No commits in the past 24 hours.</p>'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>JV &amp; Energy Trilemma Weekly Digest — {today_str}</title>
+  <title>JV &amp; Energy Trilemma Daily Digest — {today_str}</title>
   <style>{CSS}</style>
 </head>
 <body>
 
-<h1>JV &amp; Energy Trilemma — Weekly Digest</h1>
+<h1>JV &amp; Energy Trilemma — Daily Digest</h1>
 <p class="meta">
   {today_str} &nbsp;|&nbsp;
   <a href="{REPO_URL}">{REPO_URL}</a>
@@ -248,7 +248,7 @@ def build_html(commits, new_files, modified_files, today_str):
 
 def build_plain(commits, new_files, modified_files, today_str):
     lines = [
-        f"JV & Energy Trilemma — Weekly Digest",
+        f"JV & Energy Trilemma — Daily Digest",
         f"{today_str}",
         f"Repository: {REPO_URL}",
         "",
@@ -351,11 +351,11 @@ def send_email(subject, html_body, plain_body, recipients):
 
 def main():
     today_str = datetime.now(timezone.utc).strftime("%-d %B %Y")
-    subject = f"JV & Energy Trilemma Weekly Digest — {today_str}"
+    subject = f"JV & Energy Trilemma Daily Digest — {today_str}"
 
-    print("Collecting repository activity for the past 7 days…")
-    commits = commits_since_7_days()
-    new_files, modified_files = changed_files_since_7_days()
+    print("Collecting repository activity for the past 24 hours…")
+    commits = commits_since_1_day()
+    new_files, modified_files = changed_files_since_1_day()
     print(f"  {len(commits)} commit(s), {len(new_files)} new file(s), "
           f"{len(modified_files)} modified file(s).")
 
