@@ -1,0 +1,12 @@
+name: Unsubscribe from Daily Digest
+description: Remove yourself from the JV & Energy Trilemma daily digest
+title: "Unsubscribe: [your email]"
+labels: ["unsubscription"]
+body:
+  - type: input
+    id: email
+    attributes:
+      label: Email address to remove
+      placeholder: "you@example.com"
+    validations:
+      required: true

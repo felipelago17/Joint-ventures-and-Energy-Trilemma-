@@ -23,6 +23,21 @@ GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 RECIPIENTS_RAW = os.environ.get("DIGEST_RECIPIENTS", "")
 
+# Also load subscribers from the self-service file
+_SUBSCRIBERS_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+    "data", "subscribers.txt"
+)
+try:
+    with open(_SUBSCRIBERS_FILE) as _f:
+        _file_subscribers = [l.strip() for l in _f if l.strip() and "@" in l]
+except FileNotFoundError:
+    _file_subscribers = []
+
+# Merge: env-var list + file list, deduplicated
+_env_recipients = [e.strip() for e in RECIPIENTS_RAW.split(",") if e.strip()]
+RECIPIENTS_RAW = ",".join(dict.fromkeys(_env_recipients + _file_subscribers))
+
 RESEARCHER_NAME = "Felipe Villasuso Lago"
 INSTITUTION = "London South Bank University (LSBU)"
 SITE_URL = "https://felipelago17.github.io/Joint-ventures-and-Energy-Trilemma-/"

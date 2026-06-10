@@ -1,0 +1,37 @@
+name: Subscribe to Daily Digest
+description: Sign up to receive the JV & Energy Trilemma daily research digest
+title: "Subscribe: [your name]"
+labels: ["subscription"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      placeholder: "e.g. Dr Jane Smith"
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email address
+      description: The address where you want to receive the digest
+      placeholder: "you@example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      placeholder: "e.g. LSBU, PhD supervisor"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I agree to receive the daily research digest and understand I can unsubscribe at any time.
+          required: true

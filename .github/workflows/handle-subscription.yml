@@ -1,0 +1,72 @@
+name: Handle Subscription Request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add-subscriber:
+    if: contains(github.event.issue.labels.*.name, 'subscription')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract email from issue body
+        id: extract
+        run: |
+          EMAIL=$(echo "${{ github.event.issue.body }}" \
+            | grep -A1 "Email address" \
+            | tail -1 \
+            | tr -d '[:space:]')
+          NAME=$(echo "${{ github.event.issue.body }}" \
+            | grep -A1 "Your name" \
+            | tail -1 \
+            | sed 's/^[[:space:]]*//')
+          echo "email=$EMAIL" >> $GITHUB_OUTPUT
+          echo "name=$NAME"   >> $GITHUB_OUTPUT
+
+      - name: Add email to subscribers file
+        run: |
+          EMAIL="${{ steps.extract.outputs.email }}"
+          if [[ -z "$EMAIL" || ! "$EMAIL" =~ ^[^@]+@[^@]+\.[^@]+$ ]]; then
+            echo "Invalid email: '$EMAIL'" && exit 1
+          fi
+          if grep -qxF "$EMAIL" data/subscribers.txt 2>/dev/null; then
+            echo "Already subscribed: $EMAIL"
+          else
+            echo "$EMAIL" >> data/subscribers.txt
+            echo "Added: $EMAIL"
+          fi
+
+      - name: Commit updated subscriber list
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/subscribers.txt
+          git diff --cached --quiet || git commit -m "Add subscriber: ${{ steps.extract.outputs.email }}"
+          git push
+
+      - name: Close issue with confirmation comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const name  = `${{ steps.extract.outputs.name }}`;
+            const email = `${{ steps.extract.outputs.email }}`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Subscribed!** ${name}, you've been added to the daily digest at **${email}**.\n\nYou'll receive your first email at 08:00 UTC tomorrow. To unsubscribe at any time, open a new issue with the title \`Unsubscribe: ${email}\`.`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
