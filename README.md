@@ -13,7 +13,8 @@ PhD research repository — comparative governance analysis of upstream joint ve
 ```
 .
 ├── analysis/
-│   └── uae-ccus-jv-joa-governance.md   # UAE CCUS/CCS JV/JOA governance module
+│   ├── uae-ccus-jv-joa-governance.md    # UAE CCUS/CCS JV/JOA governance module
+│   └── norway-ccus-jv-joa-governance.md # Norway CCUS/CCS JV/JOA governance module
 ├── literature/
 │   └── by-theme/          # Annotated reading lists per topic
 │       ├── jv-governance.md
@@ -23,14 +24,16 @@ PhD research repository — comparative governance analysis of upstream joint ve
 │       ├── jv-contribution.md
 │       └── computational-sovereignty.md
 ├── references/
-│   ├── uae-ccus-bibliography.md         # UAE CCUS sources (29 entries, numbered)
-│   └── uae-ccus.bib                     # BibTeX export of the above
+│   ├── uae-ccus-bibliography.md         # UAE CCUS secondary sources (29 entries)
+│   ├── uae-ccus.bib                     # BibTeX of above
+│   └── primary-instruments.bib          # BibTeX for primary legislation (Norway + UAE)
 ├── data/
 │   ├── ghasha-participating-interests.csv  # Indicative Ghasha concession interests
 │   └── subscribers.txt                     # Daily digest subscriber list
 ├── regulations/
-│   ├── norway/            # Petroleum Act, PSA regulations, model JOAs, CCS sources
-│   ├── uae/               # ADNOC concession terms, UAE Petroleum Law
+│   ├── README.md          # Paired statutory-vs-contractual index (four-gap table)
+│   ├── norway/            # Annotated source register: CO2 Storage Regs, EL001, Havtil
+│   ├── uae/               # Annotated source register: Climate Law, concession framework
 │   └── international/     # UNCLOS, Energy Charter Treaty, OPEC docs
 ├── news/
 │   └── digest.md          # Auto-updated daily digest (GitHub Actions)
@@ -93,6 +96,19 @@ Data: [`data/ghasha-participating-interests.csv`](data/ghasha-participating-inte
 | Northern Lights JV | Formation; open-source infrastructure model; Phase 1/2 capacity |
 | How Norway resolves the governance gap | Codified liability transfer; separate storage tenure; mandatory MRV |
 | Comparative conclusion | Norway vs UAE categorical comparison table |
+
+## Regulations Source Registers
+
+Paired annotated registers presenting the **statutory-tenure (Norway) vs. contractual /
+concession-embedded (UAE)** contrast. See [`regulations/README.md`](regulations/README.md)
+for the four-gap index table.
+
+| Register | Key instruments |
+|----------|----------------|
+| [`regulations/norway/`](regulations/norway/README.md) | Continental Shelf Act 1963; CO₂ Storage Regulations 2014 (Chs 4, 7, 8); CO₂ Safety Regs 2020; EL001 "Aurora" licence |
+| [`regulations/uae/`](regulations/uae/README.md) | UAE Constitution Art. 23; Climate Law 2024; Cabinet Decision 67/2024; Ghasha concession framework |
+
+BibTeX for primary instruments: [`references/primary-instruments.bib`](references/primary-instruments.bib) (11 entries)
 
 ## Daily Digest Setup
 

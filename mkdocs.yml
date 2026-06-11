@@ -62,6 +62,7 @@ nav:
       - JV Contribution: literature/jv-contribution.md
       - Bibliography: literature/bibliography.md
   - Regulations:
+      - Overview: regulations/index.md
       - Norway: regulations/norway.md
       - UAE: regulations/uae.md
       - International: regulations/international.md
@@ -70,6 +71,7 @@ nav:
       - Norway CCUS/CCS JV Governance: analysis/norway-ccus-jv-joa-governance.md
   - References:
       - UAE CCUS Bibliography: references/uae-ccus-bibliography.md
+      - Primary Instruments (BibTeX): references/primary-instruments.md
   - News Digest: news/digest.md
   - Subscribe: subscribe.md
 
