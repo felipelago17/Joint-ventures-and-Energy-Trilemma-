@@ -136,6 +136,8 @@ Lund, M.W. (2018) Cost control and monitoring in Norwegian offshore joint ventur
 
 Nakhle, C. (2010) Petroleum fiscal regimes: Evolution and challenges, in Daniel, P., Keen, M. & McPherson, C. (eds), *The Taxation of Petroleum and Minerals: Principles, Problems and Practice*. Routledge / IMF.
 
+Nore, P. (2020) A political history of the international oil companies, *Energy Research & Social Science*, 68, 101543.
+
 Noreng, Ø. (1980) *The Oil Industry and Government Strategy in the North Sea*. Croom Helm.
 
 Nyland, C. & Osmundsen, P. (2016) Governance and performance in Norwegian petroleum operations, *Energy Policy*, 96, 496–506.
@@ -143,6 +145,8 @@ Nyland, C. & Osmundsen, P. (2016) Governance and performance in Norwegian petrol
 Osmundsen, P. (2010) Taxation of petroleum companies, in Kaiser, M.J. & Pulsipher, A.G. (eds), *Petroleum Economics and Engineering*. CRC Press.
 
 Ryggvik, H. (2015) *A Short History of the Norwegian Oil Industry*. Scandinavian Academic Press.
+
+Thurber, M.C. & Istad, B.T. (2010) Norway's evolving champion: Statoil and the politics of state enterprise, PESD Working Paper #92, Program on Energy and Sustainable Development, Stanford University.
 
 Stoknes, P.E., Aslaksen, I., Goluke, U., Randers, J. & Garnåsjordet, P.A. (2024) Plausible futures for the Norwegian offshore energy sector: Business as usual, harvest or rebuild?, *Energy Policy*, 184, 113887.
 
@@ -174,7 +178,11 @@ Seznec, J.-F. & Kirk, M. (2011) *Industrialization in the Gulf*. Routledge.
 
 ## 5. Energy Trilemma & Energy Security
 
+Ang, B.W., Choong, W.L. & Ng, T.S. (2015) Energy security: Definitions, dimensions and indexes, *Renewable and Sustainable Energy Reviews*, 42, 1077–1093.
+
 Bradshaw, M.J. (2014) *Global Energy Dilemmas: Energy Security, Globalization, and Climate Change*. Polity Press.
+
+Cherp, A. & Jewell, J. (2014) The concept of energy security: Beyond the four As, *Energy Policy*, 75, 415–421.
 
 Dannreuther, R. (2015) Energy security and deglobalisation, *Energy Research and Social Science*, 4, 12–22.
 
@@ -259,6 +267,8 @@ Equinor (2022) *Climate Roadmap 2022*. Equinor ASA.
 GRI (2021) *GRI 11: Oil and Gas Sector 2021*. Global Reporting Initiative.
 
 IEA (2020) *CCUS in Clean Energy Transitions*. International Energy Agency.
+
+IEA (2024) *World Energy Outlook 2024*. International Energy Agency.
 
 IRENA (2022) *Renewable Power Generation Costs in 2021*. International Renewable Energy Agency.
 
