@@ -65,6 +65,10 @@ nav:
       - Norway: regulations/norway.md
       - UAE: regulations/uae.md
       - International: regulations/international.md
+  - Analysis:
+      - UAE CCUS/CCS JV Governance: analysis/uae-ccus-jv-joa-governance.md
+  - References:
+      - UAE CCUS Bibliography: references/uae-ccus-bibliography.md
   - News Digest: news/digest.md
   - Subscribe: subscribe.md
 
