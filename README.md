@@ -85,6 +85,15 @@ Bibliography: [`references/uae-ccus-bibliography.md`](references/uae-ccus-biblio
 BibTeX: [`references/uae-ccus.bib`](references/uae-ccus.bib) |
 Data: [`data/ghasha-participating-interests.csv`](data/ghasha-participating-interests.csv)
 
+### Norway CCUS/CCS JV Governance (`analysis/norway-ccus-jv-joa-governance.md`)
+
+| Section | Content |
+|---------|---------|
+| Regulatory architecture | Section 4-7 storage licence; Longship state funding; PSA/NPD/Gassnova oversight |
+| Northern Lights JV | Formation; open-source infrastructure model; Phase 1/2 capacity |
+| How Norway resolves the governance gap | Codified liability transfer; separate storage tenure; mandatory MRV |
+| Comparative conclusion | Norway vs UAE categorical comparison table |
+
 ## Daily Digest Setup
 
 A GitHub Actions workflow (`.github/workflows/daily-digest.yml`) sends a structured HTML email every day at 08:00 UTC summarising commits, new files, regulatory updates, news digest activity, and upcoming deadlines.
