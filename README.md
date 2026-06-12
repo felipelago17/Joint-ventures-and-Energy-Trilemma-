@@ -97,6 +97,19 @@ Data: [`data/ghasha-participating-interests.csv`](data/ghasha-participating-inte
 | How Norway resolves the governance gap | Codified liability transfer; separate storage tenure; mandatory MRV |
 | Comparative conclusion | Norway vs UAE categorical comparison table |
 
+### §4A Accounting, Risk & Project-Governance Foundations (`analysis/jv-ma-accounting-risk-governance.md`)
+
+Companion to Sarwar, Villasuso et al. — slots between Section 4 (Strategic Role) and Section 5 (Contractual Clauses).
+
+| Section | Content |
+|---------|---------|
+| §4A.1 Accounting classification | IFRS 11 joint operation vs joint venture; IFRS 6 farm-in earn-out pricing; UK/UAE IFRS convergence |
+| §4A.2 Risk and HSE management systems | ISO 31000, ISO 45001, IOGP Report 510; operatorship transfer implications; UAE vs UK contrast |
+| §4A.3 Capital-project governance | Flyvbjerg megaproject risk; Merrow front-end loading; KPMG board oversight; Green Book optimism bias; PMBOK 7 |
+| §4A.4 Trilemma synthesis | Security (OMS continuity), affordability (IFRS cost of capital), sustainability (ISO 45001 + decommissioning provisioning) |
+
+> **Status:** DRAFT — UAE-specific gaps (IFRS 11 classification for ADNOC minority interests; ADNOC OMS alignment; UAE appraisal guidance) flagged in *Sources to add* section.
+
 ## Regulations Source Registers
 
 Paired annotated registers presenting the **statutory-tenure (Norway) vs. contractual /

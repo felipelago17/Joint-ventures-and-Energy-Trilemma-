@@ -26,6 +26,8 @@ Harrigan, K.R. (1986) *Managing for Joint Venture Success*. Lexington Books.
 
 Hauge, K.E., Osmundsen, P. & Vagstad, S. (2009) Production sharing contracts — incentive properties under asymmetric information, *Energy Policy*, 37(5), 1579–1588.
 
+Flyvbjerg, B., Bruzelius, N. & Rothengatter, W. (2003) *Megaprojects and Risk: An Anatomy of Ambition*. Cambridge University Press.
+
 Hennart, J.-F. (1988) A transaction costs theory of equity joint ventures, *Strategic Management Journal*, 9(4), 361–374.
 
 Hewitt, I. (2021) *Joint Ventures*, 6th edn. Sweet & Maxwell.
@@ -38,6 +40,8 @@ Kogut, B. (1988) Joint ventures: Theoretical and empirical perspectives, *Strate
 
 Kogut, B. (1989) The stability of joint ventures: Reciprocity and competitive rivalry, *Journal of Industrial Economics*, 38(2), 183–198.
 
+KPMG International (2016) *Building on Success; Learning from Failure — Governance and Executive Management of Major Capital Projects*. KPMG. <https://assets.kpmg.com/content/dam/kpmg/pdf/2016/05/11943-capital-projects-governance-tl-web.pdf>
+
 Lattanzio, R.K. et al. (2023) Capitalizing entrepreneurship, *Journal of Applied Corporate Finance*, 35(2), 8–22.
 
 Lax, D.A. & Sebenius, J.K. (1986) *The Manager as Negotiator*. Free Press.
@@ -45,6 +49,8 @@ Lax, D.A. & Sebenius, J.K. (1986) *The Manager as Negotiator*. Free Press.
 Leber, J. & Leber, D. (2019) Decision cycles in multi-partner petroleum joint ventures, *International Energy Law Review*, 37(4), 153–168.
 
 Martin, T., Gilbert, J. & Gusy, M. (2020) A global review of joint operating agreement disputes, *Journal of World Energy Law & Business*, 13(3), 205–259.
+
+Merrow, E.W. (2011) *Industrial Megaprojects: Concepts, Strategies, and Practices for Success*. John Wiley & Sons.
 
 Munoz, F. (2016) Upstream licensing partnerships, *Journal of World Energy Law and Business*, 9(3), 183–197.
 
@@ -291,3 +297,21 @@ NPD (2022) *Resource Report 2022*. Norwegian Petroleum Directorate.
 Wood Mackenzie (2019) *Norwegian Continental Shelf M&A Outlook*. Wood Mackenzie.
 
 World Energy Council (2023) *World Energy Trilemma Index 2023*. World Energy Council.
+
+---
+
+## 10. Accounting, Risk & Project-Governance Standards
+
+HM Treasury (2026) *The Green Book: UK Government Guidance on Appraisal* (updated edn). HM Government. <https://www.gov.uk/government/publications/the-green-book-appraisal-and-evaluation-in-central-government>
+
+International Accounting Standards Board (2004) *IFRS 6: Exploration for and Evaluation of Mineral Resources*. IFRS Foundation. <https://www.ifrs.org/issued-standards/list-of-standards/ifrs-6-exploration-for-and-evaluation-of-mineral-resources/>
+
+International Accounting Standards Board (2011) *IFRS 11: Joint Arrangements*. IFRS Foundation. <https://www.ifrs.org/issued-standards/list-of-standards/ifrs-11-joint-arrangements/>
+
+International Association of Oil & Gas Producers (2014) *Operating Management System Framework for Controlling Risk and Delivering High Performance in the Oil and Gas Industry* (Report 510). IOGP. <https://www.iogp.org/bookstore/product/operating-management-system-framework-for-controlling-risk-and-delivering-high-performance-in-the-oil-and-gas-industry/>
+
+International Organization for Standardization (2018a) *ISO 31000:2018 Risk Management — Guidelines*. ISO. <https://www.iso.org/standard/65694.html>
+
+International Organization for Standardization (2018b) *ISO 45001:2018 Occupational Health and Safety Management Systems — Requirements with Guidance for Use*. ISO. <https://www.iso.org/standard/63787.html>
+
+Project Management Institute (2021) *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, 7th edn. PMI. <https://www.pmi.org/standards/pmbok>
