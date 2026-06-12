@@ -315,3 +315,13 @@ International Organization for Standardization (2018a) *ISO 31000:2018 Risk Mana
 International Organization for Standardization (2018b) *ISO 45001:2018 Occupational Health and Safety Management Systems — Requirements with Guidance for Use*. ISO. <https://www.iso.org/standard/63787.html>
 
 Project Management Institute (2021) *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, 7th edn. PMI. <https://www.pmi.org/standards/pmbok>
+
+ADNOC (2025) *Sustainability Report 2024: Driving Progress and Prosperity*. Abu Dhabi National Oil Company. <https://reports.adnoc.ae/e/sustainability-report-2024>
+
+ADNOC Gas PLC (2025a) *Consolidated Financial Statements for the Year Ended 31 December 2024*. Abu Dhabi Securities Exchange.
+
+ADNOC Gas PLC (2025b) *Sustainability Report 2024: Fueling a Sustainable Tomorrow*. ADNOC Gas PLC. <https://www.adnocgas.ae/-/media/gas/investor-relation/2025/adnoc-gas---sustainability-report-2024.ashx>
+
+PwC (2019) *Financial Reporting in the Oil and Gas Industry: International Financial Reporting Standards*. PricewaterhouseCoopers. <https://www.pwc.com/id/en/energy-utilities-mining/assets/financial-reporting-in-the-oil-and-gas-industry.pdf>
+
+UAE Ministry of Finance (2024) *Manual on Public-Private Partnership Projects, Management and Execution*. UAE Ministry of Finance. <https://mof.gov.ae/wp-content/uploads/2024/07/UAE-MOF-PPP-Manual-ENG.pdf>

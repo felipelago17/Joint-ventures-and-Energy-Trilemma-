@@ -3,9 +3,11 @@ Repository: Joint-ventures-and-Energy-Trilemma
 Section: 4A (new) — slots between Section 4 (Strategic Role) and Section 5 (Contractual Clauses)
 Companion to: "The Contribution of JVs to Oil M&A Transactions: A Comparative
 Analysis of the UAE and UK" (Sarwar, Villasuso et al.)
-Citation style: OSCOLA footnotes. Footnotes numbered locally ([^1]–[^10]); renumber
+Citation style: OSCOLA footnotes. Footnotes numbered locally ([^1]–[^15]); renumber
 on integration into the host paper.
-Status: DRAFT — see "Sources to add" note at end for UAE-specific gaps to close.
+Status: DRAFT (UAE gaps partially resolved — see "Sources — Gap-Closure Status" at end).
+Residual gap: Ghasha/Habshan concession documentation for definitive IFRS 11 upstream
+classification.
 -->
 
 # 4A. Accounting, Risk, and Project-Governance Foundations of JV-Based Oil M&A
@@ -52,8 +54,20 @@ joint-operation accounting, while interests held through incorporated operating 
 — the more common UAE pattern, in which ADNOC retains a majority and the international
 partner a minority — are more likely to fall to equity accounting for that minority. The
 precise classification turns on the specific rights and obligations each contract confers
-and cannot be assumed from form alone; the determination for ADNOC concession interests
-requires a primary source the supplied literature does not resolve (see *Sources to add*).
+and cannot be assumed from form alone. Published financial statements from ADNOC-listed
+entities indicate that midstream and downstream joint ventures — such as the AGP JV (Abu
+Dhabi Gas Projects Joint Venture) and ALNG JV, held through ADNOC Gas PLC — are
+equity-accounted as associates, consistent with the joint-venture classification where
+rights attach to the net assets of a separate vehicle rather than directly to underlying
+reserves and production assets.[^11] Whether this reasoning extends to upstream concession
+interests held by IOC minority partners (such as the Ghasha concession interests of Eni,
+PTTEP, and OMV) turns on whether those interests are held through an incorporated
+operating company — pointing toward the equity method — or through an unincorporated
+joint operating agreement conferring direct pro-rata rights to reserves and production —
+pointing toward joint-operation line-by-line recognition.[^12] In the upstream sector, the
+unincorporated JOA is the predominant structure and typically produces joint-operation
+accounting, but the determination for specific ADNOC concession instruments remains
+contingent on the concession documentation itself.
 
 ## 4A.2 Risk and HSE Management Systems as Integration and Due-Diligence Factors
 
@@ -85,6 +99,21 @@ the UK, where operatorship can transfer on a sale, management-system integration
 post-completion issue, and the regulator's scrutiny of an incoming party's financial and
 technical capability implicitly extends to its competence to run the system.
 
+ADNOC's group sustainability disclosures confirm the alignment of its management systems
+with the international standards reviewed above. ADNOC's Group HSE Management System
+(GHSEMS), applied uniformly across ADNOC group companies including the operating
+subsidiaries that manage upstream joint-venture fields, is structured around a
+plan-do-check-act methodology aligned with ISO 45001:2018 (occupational health and safety)
+and ISO 14001:2015 (environmental management), underpinned by an enterprise risk
+management framework aligned to ISO 31000.[^13] The GHSEMS is implemented through a tiered
+architecture of Group Standards, Group Practices, and Group Procedures — a structure that
+mirrors the IOGP OMS three-tier model even where IOGP Report 510 is not cited as the
+formal documentary basis.[^14] This substantiates the point made above: the
+management-system continuity that ADNOC's governance structure delivers is benchmarked
+against the same international standards that the IOGP framework prescribes, and the
+resulting system-level stability is a confirmable feature of ADNOC's operating model
+rather than merely an inference from its state-ownership structure.
+
 ## 4A.3 The Capital-Project Governance Lens
 
 The capital-project and megaproject literature explains, more fundamentally than strategic
@@ -108,7 +137,17 @@ Two further sources situate appraisal within this frame. HM Treasury's Green Boo
 an appraisal methodology that mandates explicit correction for optimism bias and structured
 sensitivity analysis,[^9] a benchmark of particular relevance where state entities appraise
 JV participation; its optimism-bias uplift offers a principled reading of earn-outs and
-phased investment as mechanisms for pricing appraisal uncertainty into a deal. PMBOK's
+phased investment as mechanisms for pricing appraisal uncertainty into a deal. No
+comparable UAE federal appraisal instrument has been identified: the nearest analogue is
+the UAE Ministry of Finance's 2024 *Manual on Public-Private Partnership Projects*, which
+covers project appraisal methodology for PPP concessions — initial analysis, technical
+feasibility, financial feasibility, and contracting model — but does not mandate the
+optimism-bias correction or structured sensitivity analysis that are the Green Book's
+substantive contribution.[^15] That absence is analytically significant: where the UK
+mandates explicit bias correction as a condition of government appraisal, UAE public-sector
+JV participation decisions appear to proceed without an equivalent structural safeguard,
+concentrating appraisal-optimism risk in the single state actor who dominates UAE concession
+governance. PMBOK's
 principles-based approach to project delivery — tailoring, stewardship, and stakeholder
 engagement — maps onto the multi-party delivery a JV demands.[^10]
 
@@ -149,19 +188,34 @@ each model's trilemma trade-offs are actually settled.
 
 ---
 
-## Sources to Add (UAE-Specific Gaps)
+## Sources — Gap-Closure Status
 
-The supplied literature is weighted toward UK and international-standard material. The
-following claims need a UAE-specific primary source before the section is finalised:
+### §4A.1 — IFRS 11 Classification (Partially Resolved)
 
-- **§4A.1** — Whether IOC minority interests in ADNOC concessions are equity-accounted
-  (joint venture) or proportionately recognised (joint operation) under IFRS 11. Confirm
-  against a relevant ADNOC-listed entity's financial statements or a Big Four UAE
-  oil-and-gas accounting guide.
-- **§4A.2** — ADNOC's own operating management system and its alignment with ISO 31000 /
-  ISO 45001 / IOGP 510. Confirm against ADNOC HSE or sustainability disclosures.
-- **§4A.3** — Any UAE public-sector appraisal guidance analogous to the Green Book, if
-  cited as a comparator to the optimism-bias point.
+ADNOC Gas PLC financial statements confirm equity-method accounting for midstream and
+downstream joint ventures (AGP JV, ALNG JV) treated as associates.[^11] Whether upstream
+concession interests held by IOC minority partners (Eni, PTTEP, OMV in Ghasha) are
+similarly equity-accounted or treated as joint operations turns on the legal form of the
+specific concession instrument, which is not publicly available. The analysis in §4A.1 has
+been updated to reflect this distinction. **Residual gap:** access to the specific Ghasha
+or Habshan concession documentation to confirm incorporated-company vs unincorporated-JOA
+structure.
+
+### §4A.2 — ADNOC OMS Alignment (Resolved)
+
+ADNOC's Group HSE Management System (GHSEMS) is confirmed as aligned with ISO 45001:2018,
+ISO 14001:2015, and ISO 31000 through ADNOC's 2024 Sustainability Report.[^13] IOGP
+Report 510 is not cited as the formal documentary basis, but the three-tier architecture of
+the GHSEMS parallels the IOGP OMS framework substantively. §4A.2 updated accordingly.
+**No residual gap.**
+
+### §4A.3 — UAE Appraisal Guidance (Resolved: No Equivalent Exists)
+
+No UAE federal appraisal guidance analogous to the Green Book has been identified. The
+nearest analogue is the UAE Ministry of Finance *Manual on Public-Private Partnership
+Projects* (2024),[^15] which covers PPP project appraisal but lacks optimism-bias
+correction and structured sensitivity analysis. This absence has been incorporated into
+§4A.3 as a structural UAE–UK difference. **No residual gap.**
 
 ---
 
@@ -206,4 +260,30 @@ accessed 12 June 2026.
 
 [^10]: Project Management Institute, *A Guide to the Project Management Body of Knowledge
 (PMBOK Guide)* (7th edn, PMI 2021) <https://www.pmi.org/standards/pmbok> accessed
+12 June 2026.
+
+[^11]: ADNOC Gas PLC, *Consolidated Financial Statements for the Year Ended 31 December
+2024* (ADNOC Gas PLC / Abu Dhabi Securities Exchange 2025), Accounting Policy Note on
+Investments in Associates (AGP JV and ALNG JV equity-accounted as associates under IAS 28
+rather than as joint operations under IFRS 11).
+
+[^12]: PwC, *Financial Reporting in the Oil and Gas Industry* (PwC 2019)
+<https://www.pwc.com/id/en/energy-utilities-mining/assets/financial-reporting-in-the-oil-and-gas-industry.pdf>
+accessed 12 June 2026; IFRS 11, para 17 (joint-operation classification requires direct
+rights to assets and obligations for liabilities — the test that upstream unincorporated
+JOAs typically satisfy).
+
+[^13]: ADNOC, *Sustainability Report 2024: Driving Progress and Prosperity* (ADNOC 2025)
+<https://reports.adnoc.ae/e/sustainability-report-2024> accessed 12 June 2026
+(GHSEMS aligned with ISO 45001:2018, ISO 14001:2015, and ISO 31000 ERM framework).
+
+[^14]: ADNOC Gas PLC, *Sustainability Report 2024: Fueling a Sustainable Tomorrow* (ADNOC
+Gas PLC 2025)
+<https://www.adnocgas.ae/-/media/gas/investor-relation/2025/adnoc-gas---sustainability-report-2024.ashx>
+accessed 12 June 2026 (Group Standards / Group Practices / Group Procedures three-tier
+GHSEMS architecture).
+
+[^15]: UAE Ministry of Finance, *Manual on Public-Private Partnership Projects, Management
+and Execution* (UAE Ministry of Finance 2024)
+<https://mof.gov.ae/wp-content/uploads/2024/07/UAE-MOF-PPP-Manual-ENG.pdf> accessed
 12 June 2026.
